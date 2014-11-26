@@ -30,7 +30,7 @@ namespace WebApiSandbox
             var builder = new ContainerBuilder();
             builder.RegisterType<UserDocumentWriter>().As<ICollectionJsonDocumentWriter<User>>();
             builder.RegisterType<UserDocumentReader>().As<ICollectionJsonDocumentReader<User>>();
-            builder.RegisterType<WriteDocument>().As<IWriteDocument>();
+          //  builder.RegisterType<WriteDocument>().As<IWriteDocument>();
             builder.RegisterApiControllers(typeof(WebApiSandbox.Controllers.UsersController).Assembly);
             builder.RegisterHttpRequestMessage(config);
 
